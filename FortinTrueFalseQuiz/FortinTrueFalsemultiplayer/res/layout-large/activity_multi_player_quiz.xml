@@ -1,0 +1,218 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@drawable/background"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+        
+  
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        
+            <LinearLayout
+                  android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:padding="5dp" >
+    <ImageButton
+                android:id="@+id/btnfalsetwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:rotation="180"
+                android:src="@drawable/btnfalse" />
+          
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+          <ImageButton
+                android:id="@+id/btntruetwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:rotation="180"
+                android:src="@drawable/btntrue" />
+        </LinearLayout>
+        
+        </LinearLayout>
+        
+                <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:padding="5dp"
+            android:orientation="vertical" >
+            
+       <TextView
+            android:id="@+id/txtplayertwoques"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:gravity="center"
+            android:textColor="@color/White"
+            android:rotation="180"
+            android:textSize="31sp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+        </LinearLayout>
+        
+                <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:orientation="horizontal" >
+           <TextView
+            android:id="@+id/txtquenotwo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1 / 10"
+            android:gravity="right"
+            android:rotation="180"
+            android:textColor="@color/yellowcolor"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+              
+			<TextView
+            android:id="@+id/txtplayertwoscore"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Player 2"
+            android:gravity="left"
+            android:rotation="180"
+            android:textColor="@color/yellowcolor"
+            android:textSize="22sp" />
+        </LinearLayout>
+   </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="@style/CustomProgressBar"
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:layout_margin="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+      
+              <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:orientation="horizontal" >
+           <TextView
+            android:id="@+id/txtquenoone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1 / 10"
+            android:gravity="left"
+            android:textColor="@color/yellowcolor"
+            android:textSize="22sp" />
+           <TextView
+            android:id="@+id/txtplayeronescore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Player 1 "
+            android:gravity="right"
+            android:textColor="@color/yellowcolor"
+            android:textSize="22sp"/>
+           </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:padding="5dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+            
+       <TextView
+            android:id="@+id/txtplayeroneques"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:textColor="@color/White"
+            android:gravity="center"
+            android:textSize="31sp"/>
+            
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/disablebutton"
+            android:layout_weight="1" >
+        
+            <LinearLayout
+                  android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical"
+            
+            android:padding="5dp" >
+
+            <ImageButton
+                android:id="@+id/btntrueone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/btntrue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <ImageButton
+                android:id="@+id/btnfalseone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/btnfalse" />
+        </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

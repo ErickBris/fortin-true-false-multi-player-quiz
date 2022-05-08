@@ -1,0 +1,187 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tranbackground"
+    android:gravity="center"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="@drawable/background_a"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <TextView
+            android:id="@+id/txtheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textColor="@color/yellowcolor"
+            android:textSize="25dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+             >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/txtplayerone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Player 1"
+                    android:textColor="@color/yellowcolor"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/txtplayeronescore"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="8"
+                    android:textColor="@color/yellowcolor"
+                    android:textSize="22dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/txtplayertwo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Player 2"
+                    android:textColor="@color/yellowcolor"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/txtplayertwoscore"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/yellowcolor"
+                    android:textSize="22dp" />
+
+            </TableRow>
+
+            <LinearLayout
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_b"
+                android:orientation="vertical"
+                android:gravity="center" >
+                  <LinearLayout
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:gravity="center" >
+                <TextView
+                    android:id="@+id/txtresult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Player 1 Wins"
+                    android:textColor="#ec008b"
+                    android:textSize="25dp" />
+
+              
+                </LinearLayout>
+            </LinearLayout>
+            
+            
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/btnplayagain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:src="@drawable/playagain" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/btnleaderboard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_icon"
+                        android:src="@drawable/trophy" />
+
+                    <ImageButton
+                        android:id="@+id/btnexit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_icon"
+                        android:src="@drawable/exit" />
+                </LinearLayout>
+            </TableRow>
+              <ImageView
+                android:id="@+id/btnfb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/facebook_icon" />
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>
+  <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admobid" />
+</LinearLayout>

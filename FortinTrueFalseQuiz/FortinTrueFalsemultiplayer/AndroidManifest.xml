@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fortin.truefalse.multiplayer.quiz"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <application
+        
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="Fortin True False"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="fortin.truefalse.multiplayer.quiz.Splash"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fortin.truefalse.multiplayer.quiz.HomeScreen"
+            android:label="@string/title_activity_home_screen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="fortin.truefalse.multiplayer.quiz.Difficulty"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="fortin.truefalse.multiplayer.quiz.QuestionPerRound"
+            android:label="@string/title_activity_question_per_round"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="fortin.truefalse.multiplayer.quiz.SinglePlayerQuiz"
+            android:label="@string/title_activity_single_player_quiz"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="fortin.truefalse.multiplayer.quiz.ResultScore"
+            android:label="@string/title_activity_result_score"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="fortin.truefalse.multiplayer.quiz.MultiPlayerQuiz"
+            android:label="@string/title_activity_multi_player_quiz"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="fortin.truefalse.multiplayer.quiz.DetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fortin.truefalse.multiplayer.quiz.MultiplayerResult"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.games.APP_ID"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name="com.startapp.android.publish.list3d.List3DActivity"
+            android:theme="@android:style/Theme" />
+        <activity
+            android:name="com.startapp.android.publish.AppWallActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent" />
+    </application>
+
+</manifest>

@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Fortin Quiz Documentation Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;		
+                    <h1 class="center">&ldquo;Fortin True or False Quiz Application&rdquo;</h1>&rdquo; Documentation by &ldquo;Mayuri&rdquo; v1.0</h3>
+		
+		<hr>	
+		
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 13/9/2014<br>
+					By: Mayuri<br>
+					Email: <a href="mailto:mayuri2411@gmail.com">mayuri2411@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my Application. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://codecanyon.net/user/mayuri2411">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#intro">Introduction</a></li>
+			<li><a href="#javafile">Java Files Structure</a></li>
+			<li><a href="#sqlite">SQLite Database</a></li>
+			<li><a href="#admob">Admob & StartApp</a></li>			
+			<li><a href="#asset">PSDs, Graphics & Assets </a></li>
+			
+			
+		</ol>
+		
+		<hr>
+
+
+		<h3 id="intro"><strong>A) Introduction</strong> - <a href="#toc">top</a></h3>
+		
+		<p> Fortin True Or False Quiz Application is Native Android based Quiz Application which is designed to provide 
+                    amazing user experience while playing Quiz on your handsets. 
+                    Application is super easy to use and customize. 
+                    Now Improve your General Knowledge just by playing with your fingers at the same time Challange your Fried with Multiplayer Feature. 		 
+                    Along with the documentation we have also added the PDF documentation for Google Leaderboard Integration Guide. 
+                    
+		
+		</p>
+
+
+
+		<p>Following are the features of the quiz application</p>
+		
+	<ul>	
+		<li>Quiz App Supports Tablet and Mobile</li>
+		<li>Single Player & Multiplayer</li>
+		<li>GoogleLeaderboard</li>
+		<li>SqLite Database</li>		
+		<li> Splash Screen</li>
+		<li> Attractive Progressbars</li>		
+		<li> Admob & Startup</li>		
+		<li> Prepopulated 300+ Questions and answers </li></ul>		
+		
+		
+	
+		
+		<h3 id="javafile"><strong>B) Java Files Structure</strong> - <a href="#toc">top</a></h3>
+		<p>Following Image shows the basic folder structure of the application with Java files, when imported into Eclipse Integrated Development Environment.</p>
+		
+		<img height="400" width="700" src="assets/images/filestructure.png" alt="HTML Structure" />
+		<p> &nbsp;</p>
+
+		<p>The source code provided is an eclipse project and can be easily imported into eclipse. The folder Named 'FortinTrueFalsemultiplayer' contains all the required files for the Application which are required to import in eclipse. </p>
+		
+		<p>Description of the Java files as follows, Please go through the same if you wish to go for risking and changing the application as per your need.</p>
+		
+
+		<p> <b>Splash.java</b> - Splashscreen for 3 Seconds. Can be easily Customized just by changing the variable SPLASH_DURATION.</p>
+		
+		<p> <b>HomeScreen.java</b> - This is the landing page of the Quiz application after Splash Screen. As soon as the Splash Screen goes off it will land to the Home screen. 
+                    It has Various Options like Single Player, Multiplayer, Google Play Leader Board, Share App & Exit.</p>
+		
+		<p> <b>DataManager.java</b> - This is the Java class where you can set Timer, which is the number of seconds you will be avail for each question. 
+                    Right now its 16 seconds, You can change it as per your requirements. 
+                    </p>
+
+		
+		<p> <b>Difficulty.java</b> - This class is Activity Screen for Selecting Difficulty Level like Easy, Normal & Hard. In SQLite Database it is Defined as 1, 2 & 3 respectively. </p>
+
+		<p> <b>QuestionPerRound.java</b> - This class is Activity Screen for Selecting Number of Questions per Round like example 10, 20, 50.</p>
+                
+                <p> <b>QuizPojo.java</b> - PoJo Class For Quiz Data like Questions, answers etc. in SQLite database.</p>                
+
+		<p> DataBaseHelper.java - This Java Class will access to core SQLite database and has function defined to retrive data from database.</p>
+
+		<p> <b>SinglePlayerQuiz.java</b> - This Java Class corresponds to Screen for Single Player.</p>
+
+		<p> <b>ResultScore.java</b> - This Java class has methods which will show Scores for the Recently Played Single Player Game. It will also update scores on Google Leaderboard as per the difficulty level selected.</p>
+
+		<p> <b>MultiPlayerQuiz.java</b> - This Java Class corresponds to Screen for Multi Player.</p>
+
+		<p> <b>MultiplayerResult.java</b> - This Java class has methods which will show Scores for the Recently Played Multi Player Game. It will Show Results like Player 1 Wins or Player 2  Wins or Tie..</p>
+
+		<p> <b>CircleProgress.java</b> - This Java Class has the logic for Timer Progressbars used in the Application. you can customize as per your requirements.</p>
+
+		<hr>
+
+		<h3 id="sqlite"><strong>C) SQLite Database</strong> - <a href="#toc">top</a></h3>
+
+		<p>SQLite Database is used for storing questions answers and the correct answers difficulty wise.</p> 
+			
+
+			<p>You will need to replace your database in Assets folder. Sample Database file is provided with application whith pre-populated 300 questions. This file is present in the Asset folder of the Application.</p>
+
+			<img height="400" width="700" src="assets/images/databasescreenshot.png" alt="HTML Structure" /><br/>
+
+			<p>&nbsp;</p>
+
+			<p>Following are the self explainatory Columns used in the database: 
+			ID, Question, Answer, Difficulty.</p>
+
+			<p>To customize the SQLite database handling, You can check database code in DatabaseHelper.java, It is very easy to understand and customisable.</p>
+		
+
+
+		<hr>
+		
+		<h3 id="admob"><strong>D) Admob & StartApp</strong> - <a href="#toc">top</a></h3>
+		
+		
+		
+		<p>We have added Admob (Banner) on each screen of application. </p>
+
+            <p>There is Full Screen StartApp Ad on Back button press, after quiz is played and between the quiz on 8th question. </p>
+
+            <p>You will need to import Google Play Service Library in your workspace and Add it as library in your project.</p>
+
+            <p>You can follow below link for the further help.</p>
+            <p><a href="https://developers.google.com/mobile-ads-sdk/docs/">https://developers.google.com/mobile-ads-sdk/docs/</a></p>
+
+		
+		<hr>
+		
+
+		<h3 id="asset"><strong>E) PSDs, Graphics & Assets </strong> - <a href="#toc">top</a></h3>
+
+		<p> Layered PSDs are included with the Application, you can use and modify them as per your requirements. </p>
+		<p> Fonts which are used in the application are being placed in the asset folder. You can use this fonts as well as you can use your custom fonts as per your requirements. </p>
+		<p> You can use the various PNGs and graphic images provided in the drawable as per your requirements. </p>
+		
+		<p>Once again, thank you so much for purchasing this Application. As I said at the beginning, I'd be glad to help you if you have any questions relating to this Application. No guarantees, but I'll do my best to assist. If you have a more general question relating to the Application on CodeCanyon, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Mayuri</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
